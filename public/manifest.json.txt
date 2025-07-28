@@ -11,13 +11,27 @@
       "src": "/logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "/logo-maskable-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logo-maskable-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
-  "start_url": "/",
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
   "scope": "/",
   "display": "standalone",
-  "theme_color": "#1e40af",
+  "display_override": ["minimal-ui", "standalone"],
   "background_color": "#dbeafe",
+  "theme_color": "#1e40af",
   "description": "Des guides simples, locaux et accessibles pour apprendre, enseigner, entreprendre et innover avec l’IA en Afrique — même sans être expert.",
   "screenshots": [
     {
@@ -31,6 +45,32 @@
       "type": "image/jpeg",
       "sizes": "360x780",
       "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Apprendre l’IA",
+      "short_name": "Apprendre",
+      "description": "Découvrez comment l’IA transforme l’éducation en Afrique",
+      "url": "/#blog",
+      "icons": [
+        {
+          "src": "/icon-learn.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Entreprendre avec l’IA",
+      "short_name": "Entreprendre",
+      "description": "Lancez votre projet avec l’intelligence artificielle",
+      "url": "/#entreprendre",
+      "icons": [
+        {
+          "src": "/icon-startup.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ]
 }
